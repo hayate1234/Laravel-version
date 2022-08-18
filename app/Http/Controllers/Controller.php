@@ -9,5 +9,10 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    /*public function index(Post $post)
+    {
+        //return view('posts/index')->with(['posts' => $post->get()]);
+        //return $post->get();
+    }*/
 }
+?>
