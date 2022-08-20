@@ -11,6 +11,7 @@
 　</head>
     <body>
         <h1>Blog Name</h1>
+        <P>[<a href='/posts/create'>create</a>]</P>
         <div class='posts'>
             <div class='post'>
                  @foreach ($posts as $post)
@@ -18,7 +19,7 @@
                     <a href='/posts/{{$post->id}}'><h2 class='title'>{{ $post->title  }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
-            @endforeach
+                @endforeach
             </div>
         </div>
         <div class='paginate'>
